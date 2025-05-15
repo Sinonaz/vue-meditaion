@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import MeditationList from '@/components/MeditationList.vue'
 </script>
 
 <template>
   <main>
-
+    <MeditationList />
   </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
