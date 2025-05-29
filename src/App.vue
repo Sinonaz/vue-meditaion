@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import MeditationList from '@/components/MeditationList.vue'
+import AppHeader from '@/layout/AppHeader.vue'
 </script>
 
 <template>
-  <main>
-    <MeditationList />
-  </main>
+  <div class="app">
+    <AppHeader />
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+</style>

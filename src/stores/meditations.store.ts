@@ -9,9 +9,7 @@ export const useMeditationsStore = defineStore('meditations', () => {
   async function fetchMeditations() {
     const { data } = await http.get(API_ROUTES.meditations)
 
-    const meditationsData = data.data.meditations
-
-    meditations.value = meditationsData
+    meditations.value = data.data.meditations
   }
 
   return { meditations, fetchMeditations }
